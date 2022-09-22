@@ -1,0 +1,1407 @@
+From: nicoo <nicoo@debian.org>
+Date: Fri, 24 Apr 2020 14:36:51 +0200
+Subject: Update translations for appstream metadata
+Forwarded: https://github.com/jonls/redshift/pull/782
+Last-Update: 2020-12-11
+
+---
+ po/POTFILES.in | 2 +-
+ po/ar.po       | 8 ++++----
+ po/be.po       | 8 ++++----
+ po/bg.po       | 8 ++++----
+ po/ca.po       | 8 ++++----
+ po/cs.po       | 8 ++++----
+ po/da.po       | 8 ++++----
+ po/de.po       | 8 ++++----
+ po/el.po       | 8 ++++----
+ po/en_GB.po    | 8 ++++----
+ po/es.po       | 8 ++++----
+ po/et.po       | 8 ++++----
+ po/eu.po       | 8 ++++----
+ po/fi.po       | 8 ++++----
+ po/fr.po       | 8 ++++----
+ po/gl.po       | 8 ++++----
+ po/he.po       | 8 ++++----
+ po/hi.po       | 8 ++++----
+ po/hr.po       | 8 ++++----
+ po/hu.po       | 8 ++++----
+ po/it.po       | 8 ++++----
+ po/ja.po       | 8 ++++----
+ po/ka.po       | 8 ++++----
+ po/lt.po       | 8 ++++----
+ po/nb.po       | 8 ++++----
+ po/nl.po       | 8 ++++----
+ po/pl.po       | 8 ++++----
+ po/pt.po       | 8 ++++----
+ po/pt_BR.po    | 8 ++++----
+ po/ro.po       | 8 ++++----
+ po/ru.po       | 8 ++++----
+ po/sr.po       | 8 ++++----
+ po/sv.po       | 8 ++++----
+ po/tr.po       | 8 ++++----
+ po/uk.po       | 8 ++++----
+ po/zh_CN.po    | 8 ++++----
+ po/zh_TW.po    | 8 ++++----
+ 37 files changed, 145 insertions(+), 145 deletions(-)
+
+diff --git a/po/POTFILES.in b/po/POTFILES.in
+index 1d25560..a687643 100644
+--- a/po/POTFILES.in
++++ b/po/POTFILES.in
+@@ -1,6 +1,6 @@
+ # List of source files containing translatable strings
+ 
+-data/appdata/redshift-gtk.appdata.xml.in
++data/appdata/redshift-gtk.metainfo.xml.in
+ data/applications/redshift.desktop.in
+ data/applications/redshift-gtk.desktop.in
+ 
+diff --git a/po/ar.po b/po/ar.po
+index dd0b590..46207eb 100644
+--- a/po/ar.po
++++ b/po/ar.po
+@@ -18,14 +18,14 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: ar\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -33,12 +33,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/be.po b/po/be.po
+index 11e4808..0669f53 100644
+--- a/po/be.po
++++ b/po/be.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: be\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -27,7 +27,7 @@ msgstr ""
+ "Redshift рэгулюе каляровую тэмпературу экрана ў адпаведнасці з асяроддзем. "
+ "Гэта можа дапамагчы вашым вачам, калі вы працуеце ноччу."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -40,14 +40,14 @@ msgstr ""
+ "тэмпературы ночы да тэмпературы ў дзённы час, каб вашыя вочы паступова "
+ "прызвычаіліся."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "У праграмы ёсць значок на прасторы апавяшчэнняў, праз які можна кіраваць "
+ "Redshift."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/bg.po b/po/bg.po
+index af4a984..8d6c3d3 100644
+--- a/po/bg.po
++++ b/po/bg.po
+@@ -18,14 +18,14 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: bg\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -33,12 +33,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/ca.po b/po/ca.po
+index 525b520..ba5fd67 100644
+--- a/po/ca.po
++++ b/po/ca.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: ca\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -28,7 +28,7 @@ msgstr ""
+ "l'entorn. Aquest ajust pot ajudar a reduir el dolor d'ulls si treballeu "
+ "davant una pantalla a la nit."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -41,14 +41,14 @@ msgstr ""
+ "temperatura nocturna o viceversa, per permetre que els ulls s'adaptin "
+ "lentament."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Aquest programa proporciona una icona de notificació que permet a l'usuari "
+ "controlar el Redshift."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/cs.po b/po/cs.po
+index 3dedbf2..8dd17f0 100644
+--- a/po/cs.po
++++ b/po/cs.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: cs\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -28,7 +28,7 @@ msgstr ""
+ "okolních podmínkách. To může pomoci od únavy očí při práci s počítačem v "
+ "noci."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -40,13 +40,13 @@ msgstr ""
+ "rozednívání, barevná teplota pozvolna přejde z jednoho režimu do druhého, "
+ "aby se oči stačily přizpůsobit."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Tato aplikace poskytuje stavovou ikonu, pomocí níž je možné Redshift ovládat."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/da.po b/po/da.po
+index cb012e7..f88e1a9 100644
+--- a/po/da.po
++++ b/po/da.po
+@@ -17,7 +17,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: da\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -27,7 +27,7 @@ msgstr ""
+ "omgivelser. Dette kan mindske anstrengelser i øjnene hvis du arbejder foran "
+ "skærmen om natten."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -39,14 +39,14 @@ msgstr ""
+ "glidende overgang mellem nattemperatur og dagtemperatur som langsomt lader "
+ "dine øjne vænne sig til den ændrede farvetemperatur."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Dette program indeholder et statuslinjeikon som lader brugeren styre "
+ "Redshift."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/de.po b/po/de.po
+index fafd112..9d9443a 100644
+--- a/po/de.po
++++ b/po/de.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: de\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -27,7 +27,7 @@ msgstr ""
+ "Redshift passt die Farbtemperator des Bildschirms an die Umgebung an. Somit "
+ "werden die Augen geschont wenn man nachts am Bildschirm arbeitet."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -39,14 +39,14 @@ msgstr ""
+ "Dämmerung und am frühen Morgen wird die Farbtemperatur weich von Nacht auf "
+ "Tag umgestellt, damit sich Ihre Augen langsam anpassen können."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Dieses Programm bietet ein Statussymbol, das es dem Benutzer ermöglicht, "
+ "Redshift zu steuern."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/el.po b/po/el.po
+index 8370b84..3142419 100644
+--- a/po/el.po
++++ b/po/el.po
+@@ -18,14 +18,14 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: el\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -33,12 +33,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/en_GB.po b/po/en_GB.po
+index 6bdb721..8ac2da2 100644
+--- a/po/en_GB.po
++++ b/po/en_GB.po
+@@ -17,7 +17,7 @@ msgstr ""
+ "X-Launchpad-Export-Date: 2018-05-21 01:04+0000\n"
+ "X-Generator: Launchpad (build 18658)\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -27,7 +27,7 @@ msgstr ""
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -39,13 +39,13 @@ msgstr ""
+ "twilight and early morning, the colour temperature transitions smoothly from "
+ "night to daytime temperature to allow your eyes to slowly adapt."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "This program provides a status icon that allows the user to control Redshift."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/es.po b/po/es.po
+index 898ec9c..41cba61 100644
+--- a/po/es.po
++++ b/po/es.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: es\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -28,7 +28,7 @@ msgstr ""
+ "entorno. Este ajuste puede ayudar a reducir el dolor de ojos si trabaja "
+ "frente una pantalla por la noche."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -41,14 +41,14 @@ msgstr ""
+ "diurna a temperatura nocturna o viceversa, para permitir que los ojos se "
+ "adapten lentamente."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Este programa proporciona un ícono de notificación que permite al usuario "
+ "controlar Redshift."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/et.po b/po/et.po
+index 6d9c7c0..6052f59 100644
+--- a/po/et.po
++++ b/po/et.po
+@@ -18,14 +18,14 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: et\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -33,12 +33,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/eu.po b/po/eu.po
+index 3466da7..1b0a2be 100644
+--- a/po/eu.po
++++ b/po/eu.po
+@@ -18,14 +18,14 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: eu\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -33,12 +33,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/fi.po b/po/fi.po
+index 3ed961f..b44eb88 100644
+--- a/po/fi.po
++++ b/po/fi.po
+@@ -19,14 +19,14 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: fi\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -34,12 +34,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/fr.po b/po/fr.po
+index c51b1d1..cf9900a 100644
+--- a/po/fr.po
++++ b/po/fr.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: fr\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -28,7 +28,7 @@ msgstr ""
+ "l'environnement. Cela peut aider à diminuer les douleurs oculaires si vous "
+ "travaillez sur un écran de nuit."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -40,14 +40,14 @@ msgstr ""
+ "nuit. Lors du lever ou du coucher du soleil, la température de couleur "
+ "change doucement pour permettre à vos yeux de s'adapter."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Ce programme fournit une icône de notification permettant à l'utilisateur de "
+ "contrôler Redshift."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/gl.po b/po/gl.po
+index 5279b48..4ec08ec 100644
+--- a/po/gl.po
++++ b/po/gl.po
+@@ -18,14 +18,14 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: gl\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -33,12 +33,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/he.po b/po/he.po
+index 1403309..debbd00 100644
+--- a/po/he.po
++++ b/po/he.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: he\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -27,7 +27,7 @@ msgstr ""
+ "Redshift מתאימה את טמפרטורת הצבע של המסך בהתאם לסביבה. דבר שיכול לעזור "
+ "להפחית כאב בעיניים בעבודה מול המסך בלילה."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -35,12 +35,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/hi.po b/po/hi.po
+index edff9d0..9e09b06 100644
+--- a/po/hi.po
++++ b/po/hi.po
+@@ -18,14 +18,14 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: hi\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -33,12 +33,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/hr.po b/po/hr.po
+index 6f19260..f25690a 100644
+--- a/po/hr.po
++++ b/po/hr.po
+@@ -18,14 +18,14 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: hr\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -33,12 +33,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/hu.po b/po/hu.po
+index 80375fb..718fce7 100644
+--- a/po/hu.po
++++ b/po/hu.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: hu\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -28,7 +28,7 @@ msgstr ""
+ "segít, hogy kevésbé fájjon a szeme, ha képernyő előtt dolgozik az éjszaka "
+ "folyamán."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -40,14 +40,14 @@ msgstr ""
+ "átmenete az éjszakiról a nappali hőmérsékletre lehetővé teszi, hogy a szem "
+ "lassan alkalmazkodhasson."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Ez a program elérhetővé tesz egy állapot ikont, melyen keresztül a "
+ "felhasználó beállíthatja a Redshift alkalmazást."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/it.po b/po/it.po
+index c27dfc2..c965859 100644
+--- a/po/it.po
++++ b/po/it.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: it\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -28,7 +28,7 @@ msgstr ""
+ "circostante. Questo può aiutare a non affaticare la vista se si lavora "
+ "davanti allo schermo di notte."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -41,14 +41,14 @@ msgstr ""
+ "delicatamente da quella notturna a quella diurna per consentire alla vista "
+ "di abituarsi in modo graduale."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Questo programma fornisce un'icona di stato che consente all'utente di "
+ "controllare Redshift."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/ja.po b/po/ja.po
+index 317541a..bb9531a 100644
+--- a/po/ja.po
++++ b/po/ja.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: ja\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -27,7 +27,7 @@ msgstr ""
+ "Redshift "
+ "は環境に応じてお使いの画面の色温度を調整します。これは夜間に画面の前で作業している場合に目への悪影響を軽減させる助けになるかもしれません。"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -37,12 +37,12 @@ msgstr ""
+ "色温度は太陽の位置に応じて設定されます。昼と夜とでは異なる色温度が設定されます。夕暮れ時や早朝の間は、 "
+ "色温度は滑らかに変化してゆっくり目を慣れさせることができます。"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr "このプログラムはユーザが Redshift を制御できるようにするためのステータス アイコンを提供します。"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/ka.po b/po/ka.po
+index a44a4b3..f48970e 100644
+--- a/po/ka.po
++++ b/po/ka.po
+@@ -18,14 +18,14 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: ka\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -33,12 +33,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/lt.po b/po/lt.po
+index 1038792..046dea5 100644
+--- a/po/lt.po
++++ b/po/lt.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: lt\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -28,7 +28,7 @@ msgstr ""
+ "supančios aplinkos. Tai gali sumažinti akių skausmą tuo atveju, jei naktį "
+ "dirbate priešais kompiuterio ekraną."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -40,13 +40,13 @@ msgstr ""
+ "spalvos temperatūra glotniai pereina iš nakties temperatūros į dienos "
+ "temperatūrą, taip leisdama jūsų akims po truputį prisitaikyti."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Ši programa pateikia būsenos piktogramą, kuri leidžia valdyti Redshift."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/nb.po b/po/nb.po
+index ae83deb..7ba4171 100644
+--- a/po/nb.po
++++ b/po/nb.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: nb\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -27,7 +27,7 @@ msgstr ""
+ "Rødskift justerer fargetemperaturen på skjermen din etter omgivelsene. Dette "
+ "bedrer øyenes arbeidsforhold hvis du sitter foran skjermen om natta."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -39,13 +39,13 @@ msgstr ""
+ "på morgenen toner fargetemperaturen mykt over i dagtermperatur for å la "
+ "øyene dine tilpasse seg."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Dette programmet har et statusikon som lar brukeren kontrollere Rødskift."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/nl.po b/po/nl.po
+index 31a63f6..4beeee6 100644
+--- a/po/nl.po
++++ b/po/nl.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: nl\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -28,7 +28,7 @@ msgstr ""
+ "omgeving. Dit kan u helpen om oogpijn te verminderen als u 's avonds of 's "
+ "nachts achter een computerscherm werkt."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -41,14 +41,14 @@ msgstr ""
+ "geleidelijk en soepel van nacht naar dag gebracht, zodat uw ogen er langzaam "
+ "aan kunnen wennen."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Dit programma bevat een statuspictogram dat de gebruiker in staat stelt om "
+ "Redshift te bedienen."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/pl.po b/po/pl.po
+index 3a6a346..34b7f87 100644
+--- a/po/pl.po
++++ b/po/pl.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: pl\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -27,7 +27,7 @@ msgstr ""
+ "Redshift dostosowuje temperaturę barwową wyświetlacza do warunków "
+ "zewnętrznych. Pomaga w ten sposób uniknąć zmęczenia oczu przy pracy w nocy."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -39,13 +39,13 @@ msgstr ""
+ "zmienia się z dziennej na nocną (i odwrotnie), pozwalając oczom na powolne "
+ "przyzwyczajanie się."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Program dostarcza ikonę, która pozwala użytkownikowi kontrolować Redshift."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/pt.po b/po/pt.po
+index 83efee5..73d34ed 100644
+--- a/po/pt.po
++++ b/po/pt.po
+@@ -18,14 +18,14 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: pt\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -33,12 +33,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/pt_BR.po b/po/pt_BR.po
+index 215af9c..71779d4 100644
+--- a/po/pt_BR.po
++++ b/po/pt_BR.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: pt_BR\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -28,7 +28,7 @@ msgstr ""
+ "cerca. Isso ajuda a irritar menos os olhos se você está trabalhando em "
+ "frente a uma tela à noite."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -40,14 +40,14 @@ msgstr ""
+ "ao amanhecer, ocorre uma transição suave entre a temperatura de cor da noite "
+ "para o dia para que seus olhos lentamente se adaptem."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Esse programa exibe um ícone de status para que seja possível controlar o "
+ "Redshift."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/ro.po b/po/ro.po
+index 82a2694..0cb76f2 100644
+--- a/po/ro.po
++++ b/po/ro.po
+@@ -17,14 +17,14 @@ msgstr ""
+ "X-Launchpad-Export-Date: 2018-05-21 01:04+0000\n"
+ "X-Generator: Launchpad (build 18658)\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -32,12 +32,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/ru.po b/po/ru.po
+index 993894c..18531ba 100644
+--- a/po/ru.po
++++ b/po/ru.po
+@@ -19,7 +19,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: ru\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -29,7 +29,7 @@ msgstr ""
+ "окружающими вас условиями. Это может, например, помочь снизить усталость "
+ "глаз при работе на компьютере ночью."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -41,12 +41,12 @@ msgstr ""
+ "утром цветовая температура плавно переходит от ночных настроек к дневным, "
+ "позволяя глазам постепенно адаптироваться."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr "Эта программа позволяет управлять RedShift через иконку в трее."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/sr.po b/po/sr.po
+index 5d99e91..c92f6c5 100644
+--- a/po/sr.po
++++ b/po/sr.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: sr\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -27,7 +27,7 @@ msgstr ""
+ "Редшифт мења температуру боје вашег екрана у складу са вашим окружењем. Ово "
+ "вам може помоћи уколико осећате бол у очима када радите за рачунаром ноћу."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -39,14 +39,14 @@ msgstr ""
+ "температура боје лагано прелази из ноћне у дневну температуру да би се вашим "
+ "очима омогућило лакше привикавање."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Овај програм пружа иконицу стања која омогућава кориснику да управља "
+ "Редшифтом."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/sv.po b/po/sv.po
+index cbaa7c9..bed5f69 100644
+--- a/po/sv.po
++++ b/po/sv.po
+@@ -19,7 +19,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: sv\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -28,7 +28,7 @@ msgstr ""
+ "Redshift justerar färgtemperaturen på skärmen utefter din omgivning. Det kan "
+ "göra att dina ögon mindre irriterade om du arbetar framför skärmen på natten."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -40,14 +40,14 @@ msgstr ""
+ "morgonen övergår färgtemperaturen smidigt från natt till dagtidstemperatur "
+ "för att ge dina ögon tid att långsamt anpassa sig."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Detta program skapar en statusikon som gör det möjligt för användaren att "
+ "styra Redshift."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/tr.po b/po/tr.po
+index 6f9d2ea..91b365f 100644
+--- a/po/tr.po
++++ b/po/tr.po
+@@ -18,14 +18,14 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: tr\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -33,12 +33,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/uk.po b/po/uk.po
+index ce26f10..c20c9ae 100644
+--- a/po/uk.po
++++ b/po/uk.po
+@@ -17,7 +17,7 @@ msgstr ""
+ "X-Launchpad-Export-Date: 2018-05-21 01:04+0000\n"
+ "X-Generator: Launchpad (build 18658)\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -27,7 +27,7 @@ msgstr ""
+ "навколишнього природного середовища. Це може зменшити втому ваших очей під "
+ "час роботи перед екраном в ночі."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -40,14 +40,14 @@ msgstr ""
+ "повільно переходить із нічної до денної температури, що дозволяє вашим очам "
+ "повільно адаптуватися."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr ""
+ "Ця програма супроводжується статусною піктограмою, що дозволяє користувачеві "
+ "контролювати Redshift."
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/zh_CN.po b/po/zh_CN.po
+index bf15c17..e731a21 100644
+--- a/po/zh_CN.po
++++ b/po/zh_CN.po
+@@ -18,14 +18,14 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: \n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+ "of the screen at night."
+ msgstr "红移(Redshift) 根据你的周围环境调节你的屏幕色温。如果夜晚在屏幕前工作，这可以减少你眼睛受到的伤害。"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -33,12 +33,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr "该软件可以根据日照位置、日夜变化来设置屏幕色温，随着时间推移，色温会逐渐转变，保证让您的眼睛能够舒舒服服地适应。"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr "该程序提供了状态图标允许用户通过它控制 Redshift 。"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"
+diff --git a/po/zh_TW.po b/po/zh_TW.po
+index 14c99d5..cea7cf3 100644
+--- a/po/zh_TW.po
++++ b/po/zh_TW.po
+@@ -18,7 +18,7 @@ msgstr ""
+ "X-Generator: Launchpad (build 18658)\n"
+ "Language: zh_TW\n"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:1
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:1
+ msgid ""
+ "Redshift adjusts the color temperature of your screen according to your "
+ "surroundings. This may help your eyes hurt less if you are working in front "
+@@ -27,7 +27,7 @@ msgstr ""
+ "Redshift 根據你周圍環境來調節整螢幕色溫。\n"
+ "如果夜晚在螢幕前工作，這可以減少眼睛受到傷害。"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:2
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:2
+ msgid ""
+ "The color temperature is set according to the position of the sun. A "
+ "different color temperature is set during night and daytime. During twilight "
+@@ -35,12 +35,12 @@ msgid ""
+ "daytime temperature to allow your eyes to slowly adapt."
+ msgstr "根據太陽位置日夜變化來設置螢幕色溫。隨著日夜交替時間轉換，色溫設置則會逐漸變化，可讓您的眼睛能夠漸漸地適應。"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:3
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:3
+ msgid ""
+ "This program provides a status icon that allows the user to control Redshift."
+ msgstr "軟體提供狀態圖示，讓使用者來控制 Redshift 。"
+ 
+-#: ../data/appdata/redshift-gtk.appdata.xml.in.h:4
++#: ../data/appdata/redshift-gtk.metainfo.xml.in.h:4
+ msgid ""
+ "The Redshift information window overlaid with an example of the redness "
+ "effect"

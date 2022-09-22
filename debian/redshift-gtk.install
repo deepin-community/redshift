@@ -1,0 +1,7 @@
+usr/bin/redshift-gtk
+usr/lib/python*
+usr/share/applications/redshift-gtk.desktop
+usr/share/icons
+usr/share/metainfo/redshift-gtk.metainfo.xml
+
+debian/screenshot.png usr/share/doc/redshift-gtk/

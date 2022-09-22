@@ -1,0 +1,97 @@
+From: nicoo <nicoo@debian.org>
+Date: Fri, 24 Apr 2020 14:20:04 +0200
+Subject: Update AppStream metadata for redshift-gtk
+Forwarded: https://github.com/jonls/redshift/pull/782
+Last-Update: 2020-12-11
+
+The metadata was previously expressed in a legacy format,
+and installed in a legacy location.
+---
+ Makefile.am                               |  4 ++--
+ data/appdata/redshift-gtk.appdata.xml.in  | 20 --------------------
+ data/appdata/redshift-gtk.metainfo.xml.in | 27 +++++++++++++++++++++++++++
+ 3 files changed, 29 insertions(+), 22 deletions(-)
+ delete mode 100644 data/appdata/redshift-gtk.appdata.xml.in
+ create mode 100644 data/appdata/redshift-gtk.metainfo.xml.in
+
+diff --git a/Makefile.am b/Makefile.am
+index 7e58f08..5fb6c5a 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -37,7 +37,7 @@ SYSTEMD_USER_UNIT_IN_FILES = \
+ 	data/systemd/redshift-gtk.service.in
+ 
+ APPDATA_IN_FILES = \
+-	data/appdata/redshift-gtk.appdata.xml.in
++	data/appdata/redshift-gtk.metainfo.xml.in
+ 
+ APPARMOR_IN_FILES = \
+ 	data/apparmor/usr.bin.redshift.in
+@@ -95,7 +95,7 @@ $(systemduserunit_DATA): $(SYSTEMD_USER_UNIT_IN_FILES) Makefile
+ 
+ # Appdata file
+ if ENABLE_GUI
+-appdatadir = @datadir@/appdata
++appdatadir = @datadir@/metainfo
+ appdata_DATA = $(APPDATA_IN_FILES:.xml.in=.xml)
+ 
+ # We would preferable use @INTLTOOL_XML_RULE@ here but
+diff --git a/data/appdata/redshift-gtk.appdata.xml.in b/data/appdata/redshift-gtk.appdata.xml.in
+deleted file mode 100644
+index 3639984..0000000
+--- a/data/appdata/redshift-gtk.appdata.xml.in
++++ /dev/null
+@@ -1,20 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<!-- Copyright 2014 Jon Lund Steffensen <jonlst@gmail.com> -->
+-<application>
+- <id type="desktop">redshift-gtk.desktop</id>
+- <metadata_license>CC0</metadata_license>
+- <project_license>GPL-3.0+</project_license>
+- <description>
+-   <_p>Redshift adjusts the color temperature of your screen according to your surroundings. This may help your eyes hurt less if you are working in front of the screen at night.</_p>
+-   <_p>The color temperature is set according to the position of the sun. A different color temperature is set during night and daytime. During twilight and early morning, the color temperature transitions smoothly from night to daytime temperature to allow your eyes to slowly adapt.</_p>
+-   <_p>This program provides a status icon that allows the user to control Redshift.</_p>
+- </description>
+- <screenshots>
+-   <screenshot type="default">
+-     <image>http://jonls.dk/assets/screenshot1.png</image>
+-     <_caption>The Redshift information window overlaid with an example of the redness effect</_caption>
+-   </screenshot>
+- </screenshots>
+- <url type="homepage">http://jonls.dk/redshift/</url>
+- <updatecontact>jonlst@gmail.com</updatecontact>
+-</application>
+diff --git a/data/appdata/redshift-gtk.metainfo.xml.in b/data/appdata/redshift-gtk.metainfo.xml.in
+new file mode 100644
+index 0000000..c15625f
+--- /dev/null
++++ b/data/appdata/redshift-gtk.metainfo.xml.in
+@@ -0,0 +1,27 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<!-- Copyright 2014 Jon Lund Steffensen <jonlst@gmail.com> -->
++<component type="desktop-application">
++ <id>dk.jonls.redshift.gtk</id>
++ <name>Redshift</name>
++ <metadata_license>CC0</metadata_license>
++ <project_license>GPL-3.0+</project_license>
++ <url type="homepage">http://jonls.dk/redshift/</url>
++ <developer_name>Jon Lund Steffensen</developer_name>
++ <update_contact>jonlst@gmail.com</update_contact>
++ <launchable type="desktop-id">redshift-gtk.desktop</launchable>
++
++ <summary>Adjusts the color temperature of your screen according to your surroundings</summary>
++
++ <description>
++   <p>Redshift adjusts the color temperature of your screen according to your surroundings. This may help your eyes hurt less if you are working in front of the screen at night.</p>
++   <p>The color temperature is set according to the position of the sun. A different color temperature is set during night and daytime. During twilight and early morning, the color temperature transitions smoothly from night to daytime temperature to allow your eyes to slowly adapt.</p>
++   <p>This program provides a status icon that allows the user to control Redshift.</p>
++ </description>
++
++ <screenshots>
++   <screenshot type="default">
++     <image>http://jonls.dk/assets/screenshot1.png</image>
++     <caption>The Redshift information window overlaid with an example of the redness effect</caption>
++   </screenshot>
++ </screenshots>
++</component>

@@ -1,0 +1,25 @@
+From: nicoo <nicoo@debian.org>
+Date: Fri, 24 Apr 2020 14:22:46 +0200
+Subject: redshift-gtk: Link to a local copy of the screenshot
+Forwarded: not-needed
+Last-Update: 2020-12-12
+
+Making users fetch a remote copy is a privacy issue, compounded by the
+specified host only supporting plaintext HTTP.
+---
+ data/appdata/redshift-gtk.metainfo.xml.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/data/appdata/redshift-gtk.metainfo.xml.in b/data/appdata/redshift-gtk.metainfo.xml.in
+index c15625f..3f795af 100644
+--- a/data/appdata/redshift-gtk.metainfo.xml.in
++++ b/data/appdata/redshift-gtk.metainfo.xml.in
+@@ -20,7 +20,7 @@
+ 
+  <screenshots>
+    <screenshot type="default">
+-     <image>http://jonls.dk/assets/screenshot1.png</image>
++     <image>file:///usr/share/doc/redshift-gtk/screenshot.png</image>
+      <caption>The Redshift information window overlaid with an example of the redness effect</caption>
+    </screenshot>
+  </screenshots>

@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE=1
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DPKG_EXPORT_BUILDFLAGS = 1
+
+include /usr/share/dpkg/buildflags.mk
+
+%:
+	dh $@ --with python3
+
+override_dh_auto_configure:
+	intltoolize --force
+	dh_auto_configure -- \
+		--enable-randr --enable-vidmode \
+		--enable-geoclue2 --disable-geoclue \
+		--enable-ubuntu --enable-apparmor
+
+override_dh_install:
+	dh_apparmor -predshift --profile-name=usr.bin.redshift
+	dh_install
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
+override_dh_installsystemduser:

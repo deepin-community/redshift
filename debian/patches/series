@@ -1,0 +1,7 @@
+Implement-Wayland-support.patch
+src-redshift.c-Fix-typo-in-error-message.patch
+Update-AppStream-metadata-for-redshift-gtk.patch
+redshift-gtk-Link-to-a-local-copy-of-the-screenshot.patch
+Update-translations-for-appstream-metadata.patch
+redshift-gtk-use-Ayatana-AppIndicator3-instead-of-App-Ind.patch
+Fix-AppArmor-profile-for-Wayland.patch

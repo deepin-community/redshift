@@ -1,0 +1,327 @@
+redshift (1.12-4.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop broken systemd-based startup, without a replacement for now.
+    Closes: #892275
+
+ -- Adam Borowski <kilobyte@angband.pl>  Wed, 23 Jun 2021 14:55:39 +0200
+
+redshift (1.12-4.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Add an empty override_dh_installsystemduser to debian/rules
+    to fix double instances caused by dh compat bump. (Closes: #979075)
+
+ -- Adrian Bunk <bunk@debian.org>  Wed, 21 Apr 2021 14:34:47 +0300
+
+redshift (1.12-4) unstable; urgency=medium
+
+  * Fix AppArmor profile under Wayland (Closes: #977210)
+
+ -- nicoo <nicoo@debian.org>  Sat, 12 Dec 2020 17:43:43 +0100
+
+redshift (1.12-3) unstable; urgency=medium
+
+  * Take over maintainership, by request of previous maintainer (rrs@)
+  * Remove uploader (Franziska Lichtblau) at their request
+
+  * d/patches:
+    + Add wayland support. (Closes: #947848)
+    + Replace libappindicator with ayatana-appindicator. (Closes: #956779)
+      The former is going to be removed for the bullseye release.  
+    + src/redshift.c: Fix typo in error message.
+    + data/appdata:
+      - Update Appstream metadata format
+      - Link to a local copy of the screenshot, rather than http://jonls.dk
+
+  * gtk-redshift: Drop transitional package (Closes: #940737)
+  * redshift
+    + Install missing manpage.
+    + Install AppArmor profile.
+  * redshift-gtk:
+    + Remove menu file (policy violation)
+      Per the tech-ctte decision on #741573, it is prohibited to ship
+      both a desktop and menu file.
+    + Add manpage (symlink) for the gtk-redshift binary.
+    + Clarify description (Closes: #754430)
+
+  * Switch to debhelper compatibility level 13
+  * Comply with policy 4.5.1 (was 3.9.3)
+    + d/control: Set Rules-Requires-Root to 'no'
+    + d/copyright: Use the DEP-5 machine-readable format
+    + d/rules: Set DH_VERBOSE by default
+
+  * Setup CI for the packaging repository, and BTS integration.
+  * d/control: Use a canonical Vcs-Browser URL
+  * d/copyright: Add missing copyrights and licenses
+    + Remove explicit invocation of dh-autoreconf and corresponding dependencies
+  * d/watch
+    + Update to uscan v4
+    + Point to current upstream (moved from Launchpad to Github after v1.10)
+
+  * gbp pq: Disable patch numbering
+  * gbp dch: Do not include commit ids
+  * wrap-and-sort -st d/control and d/*.install.
+    This made the dependency lists easier to deal with.
+
+ -- nicoo <nicoo@debian.org>  Sat, 12 Dec 2020 16:29:52 +0100
+
+redshift (1.12-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/changelog: Remove trailing whitespaces
+  * d/control: Remove trailing whitespaces
+  * d/watch: Use https protocol
+
+  [ Ritesh Raj Sarraf ]
+  * [b2405eb0] Enable Ubuntu icons
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Tue, 02 Oct 2018 14:08:56 +0530
+
+redshift (1.12-1) unstable; urgency=medium
+
+  * [69589335] New upstream version 1.12 (Closes: #908289)
+  * [d6d037aa] Use gbp changelog
+  * [46f5da03] Switch packaging to salsa
+  * [45f056cf] Delete patches not needed any more
+  * [05d8c485] Drop obsolete X-Python3-Version
+  * [7a596a2d] Switch priority to optional
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Sat, 08 Sep 2018 17:52:32 +0545
+
+redshift (1.11-2) unstable; urgency=medium
+
+  * Restrict libdrm dependency to Linux platform.
+    Thanks to Pino Toscano (Closes: #866039)
+  * Switch build dependency to libglib2.0-dev.
+    Thanks to Jeremy Bicha (Closes: #894266)
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Wed, 28 Mar 2018 10:59:45 +0530
+
+redshift (1.11-1) unstable; urgency=medium
+
+  * [fbda4ac] Drop obsolete man pages. Merged upstream
+    (Closes: #824446, #824445)
+  * [3aa5d48] Imported Upstream version 1.11
+    (Closes: #757978)
+  * [65d1dc0] Drop patch add-desktop-file.patch. Merged upstream
+  * [a1f0ecf] Create symlink manpage for redshift-gtk
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Mon, 16 May 2016 15:24:23 +0530
+
+redshift (1.10-6) unstable; urgency=medium
+
+  * [911ab31] Update changelog for release
+  * [9e5a3cb] Drop obsolete dependency on python-gtk2.
+    Thanks to Javier Cantero (Closes: #804581)
+  * [753bdca] Ship systemd user service files. Useful for activation
+    of daemon services for a user session.
+    Thanks to Laurent Bigonville (Closes: #87729)
+  * [be77cae] Fix Vcs URL
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Tue, 22 Mar 2016 21:47:47 +0530
+
+redshift (1.10-5) unstable; urgency=medium
+
+  * [8a88246] Add some changes from Laurent Bigonville
+  * [ca45b49] Drop README.Debian
+  * [4b34f2c] Add header to quilt patch
+  * [9e854c4] Add debian/gbp.conf
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Thu, 27 Aug 2015 17:05:00 +0530
+
+redshift (1.10-4) unstable; urgency=medium
+
+  * [c3cdd0e] Drop patch remove_autostart.patch (Closes: #791598)
+  * [47e94ba] Ship appdata file in redshift-gtk.
+    Thanks to Laurent Bigonville (Closes: #791600)
+  * [3a6b76d] Fix reference to correct name.
+    Thanks to Torquil Macdonal Sorensen (Closes: #795502)
+  * [26605bd] Add redshift.desktop file entry. Needed for GeoClue activation.
+    Thanks to Laurent Bigonville (Closes: #789883)
+  * [536ef7e] Add dh-autoreconf to build. Drop autotools_dev from build.
+    Call intltoolize to update po/ files
+  * [4983734] Ship redshift.desktop file
+  * [a1397f2] Add configure flag for systemd user unit dir
+  * [fb6fb18] Add redshift-gtk.desktop file that got dropped off mistakenly
+    in the redshift.desktop patch
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Sat, 15 Aug 2015 16:46:00 +0200
+
+redshift (1.10-3) unstable; urgency=medium
+
+  * [a62084b] Fix exact version in Breaks and Replaces.
+    Thanks to Axel Beckert (Closes: #789966)
+  * [e7f571d] Add build dependency on dh-python
+  * [f7ea959] Refresh patches
+  * [3263caa] No need to override dh_auto_install
+  * [2b1374c] Bump compat level to 9
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Fri, 26 Jun 2015 16:00:07 +0530
+
+redshift (1.10-2) unstable; urgency=medium
+
+  [ Jackson Doak ]
+  * debian/control: Created transitional package for
+    gtk-redshift → redshift-gtk
+  * debian/gtk-redshift.* files renamed to redshift-gtk.*.
+  * debian/redshift-gtk.links: Created to make transitional symlink
+    from old name to new.
+
+  [ Ritesh Raj Sarraf ]
+  * [d087430] Explicitly disable old geoclue support
+  * [16db3c2] Add a Recommends on geoclue 2
+  * [cf236e4] Add documentation about how to use Geoclue 2
+  * [9d8f9bb] Use X-Python3-Version for the required python3 version.
+    Thanks to Jackson Doak (Closes: #786818)
+  * [03c69c5] Rename package from gtk-redshift -> redshift-gtk.
+    Thanks to Jackson Doak (Closes: #757557)
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Tue, 26 May 2015 14:55:19 +0530
+
+redshift (1.10-1) unstable; urgency=medium
+
+  * [56e5b64] Imported Upstream version 1.10 (Closes: #786638)
+  * [6d3d69c] Add intltool as build dep
+  * [b2c49de] Enable geoclue2 support
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Sun, 24 May 2015 16:48:08 +0530
+
+redshift (1.9.1-4) unstable; urgency=medium
+
+  * [2125d96] Add NEWS file, documenting the discontinuation of the
+    gnome clock feature. Users need to manually provide the location
+    information
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Fri, 10 Oct 2014 13:06:18 +0530
+
+redshift (1.9.1-3) unstable; urgency=medium
+
+  * [c4bae6d] Enable libdrm support
+  * [7dd8f00] Add at-spi2-core to Recommends
+  * [261557f] Drop gnome clock support, which has been discontinued
+    upstream (Closes: #738127, #757445)
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Tue, 07 Oct 2014 15:56:25 +0530
+
+redshift (1.9.1-2) unstable; urgency=medium
+
+  * Upload to unstable
+  * [0b5aafa] Fix README.Debian about autostart.
+    Thanks to Jonathan Dowland (Closes: #700382)
+  * [37b69f3] Add python3-gi to Depends on redshift-gtk.
+    Thanks to Kumar Appaiah (Closes: #759523)
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Sun, 28 Sep 2014 16:01:51 +0530
+
+redshift (1.9.1-1) experimental; urgency=medium
+
+  * [1488e68] Imported Upstream version 1.9.1
+    (Closes: #756773)
+  * [5a390f6] Refresh patch remove_autostart.patch
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Wed, 06 Aug 2014 13:33:16 +0530
+
+redshift (1.8-1) unstable; urgency=medium
+
+  * [6a84ddb] Imported Upstream version 1.8
+  * [e055406] Enable geoclue support
+  * [59c1cfe] Add libgeoclue-dev to build-dep
+  * [df89555] Drop libx11-dev build-dep
+  * [106dbec] Fix homepage url
+  * [e25480f] Drop non-existent path rm
+  * [3cfcf2f] binary changed to redshift-gtk
+  * [7a0d0d9] Add myself as Maintainer and Rahlina as Uploader
+  * [8d62066] Refresh patch remove_autostart.patch
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Fri, 01 Aug 2014 00:33:29 +0530
+
+redshift (1.7-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix "FTBFS: configure: error: missing dependencies for VidMode
+    method":
+    Add build dependency on libxext-dev; solution taken from Ubuntu package.
+    (Closes: #746148)
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 12 May 2014 17:16:51 +0200
+
+redshift (1.7-2) unstable; urgency=low
+
+  * Changed dependency from python (>= 2.6.6-3~) to ${python:Depends}
+    (Closes: #662155)
+  * Updated man pages using help2man (redshift 1.7) (Closes: #676692)
+  * Added man page for configuration file + example configuration file
+    (Closes: #619709)
+  * Upgrade to Standards-Versions 3.9.3, no changes needed
+  * Added hardening flags to debian/rules
+  * Added build-dependency to dpkg-dev (>= 1.16.1~) due to importing
+    buildflags
+
+ -- Franziska Lichtblau <rhalina@old-forest.org>  Fri, 15 Jun 2012 20:17:21 +0200
+
+redshift (1.7-1) unstable; urgency=low
+
+  * New upstream release (Closes: #634178)
+  * Add dependency python-gtk2 for gtk-redshift (Closes: #628822) thanks to
+    Benjamin Kay for patch
+  * Officially overtook maintainership removed Simon Richter from Maintainer
+  * Upgrade to Standards-Verions 3.9.2, no changes needed
+  * Updated the manpages
+  * Removed autostart of gtk-redshift because of freedesktop.org standard
+    violation (Closes: #619699) + added README.Debian
+  * Removed /usr/share/pyshared/gtk_redshift/utils.py from package as
+    autostart is disabled
+  * Migrated from dh_pysupport to dh_python2 (added dependency to python
+    (>= 2.6.6-3~))
+  * Added Vcs + Vcs-Browser entry to debian/control
+
+ -- Franziska Lichtblau <rhalina@old-forest.org>  Sat, 30 Jul 2011 15:38:36 +0200
+
+redshift (1.6-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Franziska Lichtblau <rhalina@old-forest.org>  Sun, 24 Oct 2010 22:48:35 +0200
+
+redshift (1.5-2) unstable; urgency=low
+
+  * Enabling option for automatic location updates from GNOME clock applet
+  * Add build-dependency libgconf2-dev for GNOME clock applet support
+  * Add dependency for gtk-redshift python-xdg
+  * Add versioned dependency autotools-dev (>= 20100122.1~) due to use of
+    "dh --with autotools_dev $@" in debian/rules
+  * Upgrade to Standards-Verions 3.9.1, no changes needed
+  * Include NEWS and basic README from upstream (Closes: #595342)
+  * Install .desktop and .menu file for gtk-redshift
+
+ -- Franziska Lichtblau <rhalina@old-forest.org>  Tue, 05 Oct 2010 00:38:23 +0200
+
+redshift (1.5-1) unstable; urgency=low
+
+  * New upstream release (Closes: #590506)
+
+ -- Franziska Lichtblau <rhalina@old-forest.org>  Thu, 09 Sep 2010 12:56:08 +0200
+
+redshift (1.2-3) unstable; urgency=low
+
+  * Add Franziska Lichtblau to uploaders
+  * Add python dependency (Closes:#589211,#589494,#571149) thanks to Jakub Wilk
+  for patch
+  * Add dependency for pkg-config (>=  0.25) older version fails with
+  XF86VM (Closes:#581895)
+  * Add manpages for redshift and gtk-redshift (Closes:#589210)
+
+ -- Franziska Lichtblau <rhalina@old-forest.org>  Fri, 23 Jul 2010 00:01:00 +0200
+
+redshift (1.2-2) unstable; urgency=low
+
+  * Add missing dependency on pkg-config
+
+ -- Simon Richter <sjr@debian.org>  Sun, 21 Feb 2010 15:37:11 +0100
+
+redshift (1.2-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Simon Richter <sjr@debian.org>  Thu, 18 Feb 2010 09:58:46 +0100

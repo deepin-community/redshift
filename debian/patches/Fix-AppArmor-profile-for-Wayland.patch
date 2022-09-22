@@ -1,0 +1,30 @@
+From: nicoo <nicoo@debian.org>
+Date: Sat, 12 Dec 2020 17:10:21 +0100
+Subject: Fix AppArmor profile for Wayland
+Bug-Debian: https://bugs.debian.org/977210
+Forwarded: https://github.com/jonls/redshift/pull/663#issuecomment-743781890
+
+---
+ data/apparmor/usr.bin.redshift.in | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/data/apparmor/usr.bin.redshift.in b/data/apparmor/usr.bin.redshift.in
+index d6696db..2b1b0e2 100644
+--- a/data/apparmor/usr.bin.redshift.in
++++ b/data/apparmor/usr.bin.redshift.in
+@@ -22,6 +22,7 @@
+   #include <abstractions/base>
+   #include <abstractions/nameservice>
+   #include <abstractions/dbus-strict>
++  #include <abstractions/wayland>
+   #include <abstractions/X>
+ 
+   dbus send
+@@ -36,6 +37,7 @@
+   audit dbus bus=system,
+ 
+   owner @{HOME}/.config/redshift.conf r,
++  owner /run/user/*/redshift-shared-* rw,
+ 
+   # Site-specific additions and overrides. See local/README for details.
+   #include <local/usr.bin.redshift>

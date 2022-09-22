@@ -1,0 +1,3 @@
+usr/bin/redshift-gtk usr/bin/gtk-redshift
+usr/share/man/man1/redshift.1.gz usr/share/man/man1/gtk-redshift.1.gz
+usr/share/man/man1/redshift.1.gz usr/share/man/man1/redshift-gtk.1.gz

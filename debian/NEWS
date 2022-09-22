@@ -1,0 +1,10 @@
+redshift (1.9.1-4) unstable; urgency=medium
+
+  Starting with version 1.9, redshift upstream has dropped support for
+  determining location using GNOME Clock. Hence, users using the GTK
+  variant of redshift need to provide the location information manually
+  .
+  The settings can be put into a file. Please refer to the manual page
+  for details
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Fri, 10 Oct 2014 13:02:10 +0530

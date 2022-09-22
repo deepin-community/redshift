@@ -1,0 +1,5 @@
+etc/apparmor.d/usr.bin.redshift
+usr/bin/redshift
+usr/share/applications/redshift.desktop
+usr/share/locale
+usr/share/man/man1/redshift.1
